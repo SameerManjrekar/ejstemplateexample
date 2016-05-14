@@ -1,0 +1,21 @@
+<html>
+<head>
+</head>
+<body>
+<% include partials/includeMenu.ejs %>
+<br><br><br>
+	<h1 align="center">Welcome to the Transport Hub</h1>
+	<p>
+		<medium>Hi <%= welcomeMessage %> ! Depending on your interest, I'll take
+		you to a city</medium>
+	</p>
+	<form method="post" action="/toCity">
+	<p>
+	<input type="text" required name="interest" placeholder="What is your Interest?" />
+	</p>
+	<p>
+	<button type="submit">Submit</button>
+	</p>
+	</form>
+</body>
+</html>
